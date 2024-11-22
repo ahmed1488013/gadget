@@ -1,0 +1,102 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202A44;
+    color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container for the promo */
+.promo-container {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #202A44;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+}
+
+/* Main text styling */
+.main-text {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Description text styling */
+.description {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInDescription 2s ease-out 1.5s forwards;
+}
+
+/* Gadget Image styling */
+.gadget-image img {
+    width: 80%;
+    max-width: 400px;
+    margin-top: 30px;
+    animation: fadeInImage 3s ease-out 2s forwards;
+}
+
+/* CTA Button styling */
+.cta-button {
+    background-color: #F39C12;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e07c00;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDescription {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
